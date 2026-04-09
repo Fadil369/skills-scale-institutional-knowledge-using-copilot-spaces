@@ -1,0 +1,113 @@
+{
+  "app": {
+    "name": "برين سايت",
+    "tagline": "منصة الرعاية الصحية الذكية للمملكة العربية السعودية",
+    "loading": "جار التحميل...",
+    "error": "حدث خطأ",
+    "retry": "إعادة المحاولة",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "search": "بحث",
+    "filter": "تصفية",
+    "export": "تصدير",
+    "import": "استيراد",
+    "close": "إغلاق",
+    "submit": "إرسال"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "claims": "المطالبات",
+    "patients": "المرضى",
+    "providers": "مقدمو الخدمات",
+    "compliance": "الامتثال",
+    "analytics": "التحليلات",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج"
+  },
+  "claims": {
+    "title": "إدارة المطالبات",
+    "new": "مطالبة جديدة",
+    "total": "إجمالي المطالبات",
+    "pending": "قيد الانتظار",
+    "approved": "موافق عليها",
+    "rejected": "مرفوضة",
+    "status": {
+      "active": "نشطة",
+      "cancelled": "ملغاة",
+      "draft": "مسودة",
+      "submitted": "مقدمة",
+      "approved": "موافق عليها",
+      "rejected": "مرفوضة",
+      "appealed": "قيد الاستئناف",
+      "paid": "مدفوعة"
+    },
+    "fields": {
+      "claimId": "رقم المطالبة",
+      "patientName": "اسم المريض",
+      "provider": "مقدم الخدمة",
+      "amount": "المبلغ",
+      "date": "التاريخ",
+      "diagnosis": "التشخيص",
+      "procedure": "الإجراء",
+      "insurerId": "رقم شركة التأمين"
+    },
+    "errors": {
+      "missingFields": "يرجى ملء جميع الحقول المطلوبة",
+      "invalidCode": "رمز غير صالح: {{code}}",
+      "submitFailed": "فشل إرسال المطالبة. يرجى المحاولة مرة أخرى.",
+      "notFound": "المطالبة {{id}} غير موجودة"
+    }
+  },
+  "nphies": {
+    "title": "منصة NPHIES",
+    "eligibility": "فحص الأهلية",
+    "preAuth": "الموافقة المسبقة",
+    "submit": "تقديم المطالبة",
+    "appeal": "استئناف",
+    "connected": "متصل بـ NPHIES",
+    "disconnected": "غير متصل بـ NPHIES"
+  },
+  "compliance": {
+    "title": "الامتثال",
+    "fhir": "امتثال FHIR R4",
+    "hipaa": "امتثال HIPAA",
+    "cbahi": "امتثال CBAHI",
+    "nphies": "امتثال NPHIES",
+    "compliant": "ممتثل",
+    "nonCompliant": "غير ممتثل",
+    "lastCheck": "آخر فحص: {{date}}"
+  },
+  "hospitals": {
+    "riyadh": "الرياض",
+    "madinah": "المدينة المنورة",
+    "unaizah": "عنيزة",
+    "khamis": "خميس مشيط",
+    "jizan": "جازان",
+    "abha": "أبها",
+    "status": {
+      "online": "متصل",
+      "offline": "غير متصل",
+      "degraded": "أداء منخفض"
+    }
+  },
+  "ai": {
+    "fraudDetection": "كشف الاحتيال",
+    "riskScore": "درجة الخطر",
+    "anomaly": "شذوذ محتمل",
+    "recommendation": "توصية الذكاء الاصطناعي",
+    "highRisk": "خطر مرتفع",
+    "mediumRisk": "خطر متوسط",
+    "lowRisk": "خطر منخفض"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "invalidCredentials": "بيانات الاعتماد غير صحيحة",
+    "sessionExpired": "انتهت صلاحية الجلسة. يرجى تسجيل الدخول مجدداً."
+  }
+}

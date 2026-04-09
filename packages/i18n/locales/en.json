@@ -1,0 +1,113 @@
+{
+  "app": {
+    "name": "BrainSAIT",
+    "tagline": "AI-Powered Healthcare Platform for Saudi Arabia",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "import": "Import",
+    "close": "Close",
+    "submit": "Submit"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "claims": "Claims",
+    "patients": "Patients",
+    "providers": "Providers",
+    "compliance": "Compliance",
+    "analytics": "Analytics",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "claims": {
+    "title": "Claims Management",
+    "new": "New Claim",
+    "total": "Total Claims",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "status": {
+      "active": "Active",
+      "cancelled": "Cancelled",
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "appealed": "Under Appeal",
+      "paid": "Paid"
+    },
+    "fields": {
+      "claimId": "Claim ID",
+      "patientName": "Patient Name",
+      "provider": "Provider",
+      "amount": "Amount",
+      "date": "Date",
+      "diagnosis": "Diagnosis",
+      "procedure": "Procedure",
+      "insurerId": "Insurer ID"
+    },
+    "errors": {
+      "missingFields": "Please fill in all required fields",
+      "invalidCode": "Invalid code: {{code}}",
+      "submitFailed": "Failed to submit claim. Please try again.",
+      "notFound": "Claim {{id}} not found"
+    }
+  },
+  "nphies": {
+    "title": "NPHIES Platform",
+    "eligibility": "Eligibility Check",
+    "preAuth": "Prior Authorization",
+    "submit": "Submit Claim",
+    "appeal": "Appeal",
+    "connected": "Connected to NPHIES",
+    "disconnected": "Disconnected from NPHIES"
+  },
+  "compliance": {
+    "title": "Compliance",
+    "fhir": "FHIR R4 Compliance",
+    "hipaa": "HIPAA Compliance",
+    "cbahi": "CBAHI Compliance",
+    "nphies": "NPHIES Compliance",
+    "compliant": "Compliant",
+    "nonCompliant": "Non-Compliant",
+    "lastCheck": "Last checked: {{date}}"
+  },
+  "hospitals": {
+    "riyadh": "Riyadh",
+    "madinah": "Madinah",
+    "unaizah": "Unaizah",
+    "khamis": "Khamis Mushait",
+    "jizan": "Jizan",
+    "abha": "Abha",
+    "status": {
+      "online": "Online",
+      "offline": "Offline",
+      "degraded": "Degraded"
+    }
+  },
+  "ai": {
+    "fraudDetection": "Fraud Detection",
+    "riskScore": "Risk Score",
+    "anomaly": "Potential Anomaly",
+    "recommendation": "AI Recommendation",
+    "highRisk": "High Risk",
+    "mediumRisk": "Medium Risk",
+    "lowRisk": "Low Risk"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "username": "Username",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "invalidCredentials": "Invalid credentials",
+    "sessionExpired": "Session expired. Please log in again."
+  }
+}

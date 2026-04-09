@@ -1,0 +1,13 @@
+{
+  "name": "@brainsait/fhir-client",
+  "version": "1.0.0",
+  "description": "Unified FHIR R4 client shared across all BrainSAIT workers and apps",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test src/__tests__/",
+    "lint": "eslint src/"
+  },
+  "keywords": ["fhir", "r4", "healthcare", "nphies", "brainsait"],
+  "license": "MIT"
+}

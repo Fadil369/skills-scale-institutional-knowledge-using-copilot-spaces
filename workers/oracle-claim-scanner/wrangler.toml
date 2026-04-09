@@ -1,0 +1,47 @@
+name = "oracle-claim-scanner"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[routes]]
+pattern   = "oracle-scanner.elfadil.com/*"
+zone_name = "elfadil.com"
+
+# Browser Rendering binding (Puppeteer)
+[browser]
+binding = "BROWSER"
+
+# Session cookie store — 8-hour TTL
+[[kv_namespaces]]
+binding    = "SESSIONS"
+id         = "REPLACE_WITH_SESSIONS_KV_ID"
+preview_id = "REPLACE_WITH_SESSIONS_KV_PREVIEW_ID"
+
+# Scan results store — 24-hour TTL
+[[kv_namespaces]]
+binding    = "RESULTS"
+id         = "REPLACE_WITH_RESULTS_KV_ID"
+preview_id = "REPLACE_WITH_RESULTS_KV_PREVIEW_ID"
+
+[observability]
+enabled = true
+
+[vars]
+ENVIRONMENT = "production"
+
+# Secrets (set via wrangler secret put):
+#   API_KEY
+#   ORACLE_USER          (shared fallback)
+#   ORACLE_PASS          (shared fallback)
+#   ORACLE_USER_RIYADH   (per-hospital override)
+#   ORACLE_PASS_RIYADH
+#   ORACLE_USER_MADINAH
+#   ORACLE_PASS_MADINAH
+#   ORACLE_USER_UNAIZAH
+#   ORACLE_PASS_UNAIZAH
+#   ORACLE_USER_KHAMIS
+#   ORACLE_PASS_KHAMIS
+#   ORACLE_USER_JIZAN
+#   ORACLE_PASS_JIZAN
+#   ORACLE_USER_ABHA
+#   ORACLE_PASS_ABHA

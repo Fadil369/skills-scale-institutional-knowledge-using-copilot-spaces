@@ -1,0 +1,45 @@
+name = "brainsait-mcp-gateway"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Route: handled through api-gateway service binding at /api/mcp/*
+# Direct route for standalone access:
+[[routes]]
+pattern   = "mcp.brainsait.io/*"
+zone_name = "brainsait.io"
+
+# D1 database for audit log (HIPAA compliance)
+[[d1_databases]]
+binding      = "AUDIT_DB"
+database_name = "brainsait-audit"
+database_id  = "REPLACE_WITH_AUDIT_D1_ID"
+
+# KV for MCP sessions
+[[kv_namespaces]]
+binding    = "MCP_SESSIONS"
+id         = "REPLACE_WITH_MCP_SESSIONS_KV_ID"
+preview_id = "REPLACE_WITH_MCP_SESSIONS_KV_PREVIEW_ID"
+
+# R2 bucket for PHI document storage
+[[r2_buckets]]
+binding    = "PHI_DOCS"
+bucket_name = "brainsait-phi-docs"
+
+[observability]
+enabled = true
+
+[vars]
+ENVIRONMENT       = "production"
+FHIR_BASE_URL     = "https://fhir.brainsait.io/r4"
+COMPLIANCE_LEVEL  = "HIPAA,NPHIES"
+DEFAULT_LANGUAGE  = "ar"
+NPHIES_ENDPOINT   = "https://nphies.sa/license/"
+
+# Secrets (set via wrangler secret put):
+#   API_KEY
+#   JWT_SECRET
+#   ENCRYPTION_KEY        (AES-256 for PHI)
+#   AUDIT_LOG_ENDPOINT
+#   NPHIES_CLIENT_ID
+#   NPHIES_PROVIDER_ID

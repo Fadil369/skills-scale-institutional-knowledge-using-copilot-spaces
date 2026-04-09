@@ -1,0 +1,11 @@
+{
+  "name": "@brainsait/auth",
+  "version": "1.0.0",
+  "description": "Unified JWT + API key authentication for BrainSAIT workers and apps",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test src/__tests__/"
+  },
+  "license": "MIT"
+}

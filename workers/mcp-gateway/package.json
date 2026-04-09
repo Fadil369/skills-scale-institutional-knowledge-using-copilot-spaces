@@ -1,0 +1,16 @@
+{
+  "name": "brainsait-mcp-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MCP Protocol Gateway — HIPAA/NPHIES compliant healthcare tools as a Cloudflare Worker",
+  "scripts": {
+    "dev": "wrangler dev --port 8793",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail brainsait-mcp-gateway",
+    "migrate:local": "wrangler d1 migrations apply brainsait-audit",
+    "migrate:remote": "wrangler d1 migrations apply brainsait-audit --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^3.40.0"
+  }
+}

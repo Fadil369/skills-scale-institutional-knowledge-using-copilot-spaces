@@ -1,0 +1,11 @@
+{
+  "name": "@brainsait/i18n",
+  "version": "1.0.0",
+  "description": "Bilingual AR/EN localization package for BrainSAIT healthcare platform",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test src/__tests__/"
+  },
+  "license": "MIT"
+}

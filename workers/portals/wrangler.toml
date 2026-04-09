@@ -1,0 +1,35 @@
+name = "brainsait-portals"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[[routes]]
+pattern   = "portals.elfadil.com/*"
+zone_name = "elfadil.com"
+
+# Health cache KV — populated by cron probe
+[[kv_namespaces]]
+binding    = "PORTAL_KV"
+id         = "REPLACE_WITH_PORTAL_KV_ID"
+preview_id = "REPLACE_WITH_PORTAL_KV_PREVIEW_ID"
+
+# Cron: probe all 6 branches every 5 minutes
+[triggers]
+crons = ["*/5 * * * *"]
+
+[observability]
+enabled = true
+
+[vars]
+ENVIRONMENT          = "production"
+SCANNER_URL          = "https://oracle-scanner.elfadil.com"
+ALLOW_UNAUTHENTICATED = "0"
+CORS_ALLOWED_ORIGINS = "https://portals.elfadil.com"
+REPO_URL             = "https://github.com/Fadil369/solutions"
+
+# Service binding to oracle-claim-scanner Worker
+[[services]]
+binding = "SCANNER_SERVICE"
+service = "oracle-claim-scanner"
+
+# Secrets (set via wrangler secret put):
+#   API_KEY

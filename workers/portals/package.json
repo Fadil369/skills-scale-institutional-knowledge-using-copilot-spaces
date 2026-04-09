@@ -1,0 +1,14 @@
+{
+  "name": "brainsait-portals",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BrainSAIT Healthcare Control Tower — portals.elfadil.com",
+  "scripts": {
+    "dev": "wrangler dev --port 8792",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail brainsait-portals"
+  },
+  "devDependencies": {
+    "wrangler": "^3.40.0"
+  }
+}
